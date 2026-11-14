@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex">
+<!-- Google Analytics 4: production only (counts visits on ourjewishhistory.com and jgoldatl.github.io, not previews or local files) -->
+<script>
+if(/^(www\.)?ourjewishhistory\.com$|^jgoldatl\.github\.io$/.test(location.hostname)){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-W0VSWJ8FCS';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-W0VSWJ8FCS');}
+</script>
+<title>Roadmap · Our Jewish Journey</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{--night:#0E1822;--night2:#162634;--text:#EFE6D3;--muted:#A9B4B8;--amber:#E8B27A;--line:rgba(239,230,211,.18)}
+html,body{margin:0;background:var(--night);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px 24px;padding-top:max(14px,env(safe-area-inset-top))}
+.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+h1{font-family:Georgia,"Times New Roman",serif;font-weight:600;font-size:1.5rem;margin:0;color:var(--amber)}
+.pill{height:44px;padding:0 18px;border-radius:999px;border:1px solid rgba(239,230,211,.28);background:rgba(239,230,211,.06);color:var(--text);font-size:14px;text-decoration:none;display:inline-flex;align-items:center;white-space:nowrap}
+.pill:hover{background:rgba(239,230,211,.12)}
+.pill:focus-visible,.alt a:focus-visible{outline:2px solid #f2a65a;outline-offset:2px}
+.frame{position:relative;width:100%;aspect-ratio:16/9;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--night2)}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.alt{margin:12px 0 0;font-size:.85rem;color:var(--muted)}
+.alt a{color:var(--amber)}
+
+.wrap{max-width:none;padding-left:16px;padding-right:16px;padding-bottom:72px}
+.top .help{flex:1 1 220px;margin:0;padding:8px 12px;border-radius:10px;background:rgba(239,230,211,.08);border:1px solid var(--line);color:var(--text);font-size:.95rem;text-align:center}
+.top{flex-wrap:wrap}
+.bar.tools{margin:12px 0 0;align-items:center}.bar.tools .meta{margin:0 4px 0 0}
+.cm img{display:block;max-width:100%;margin-top:8px;border-radius:8px}.cm h3{font-size:.95rem;margin:0 0 4px;color:var(--amber)}
+.bar.right{justify-content:flex-end}.bar[hidden],.bar select[hidden],.bar input[hidden]{display:none}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 10px}
+.bar input[type=search],.bar select{height:44px;border-radius:10px;border:1px solid rgba(239,230,211,.28);background:var(--night);color:var(--text);font:inherit;font-size:15px;padding:0 10px;min-width:0}
+.bar input[type=search]{flex:1 1 180px}.bar select{flex:0 1 150px}
+.btn{height:44px;padding:0 14px;border-radius:999px;border:1px solid rgba(239,230,211,.28);background:rgba(239,230,211,.06);color:var(--text);font:inherit;font-size:14px;cursor:pointer;white-space:nowrap}
+.btn:hover{background:rgba(239,230,211,.12)}.btn.on{background:rgba(242,166,90,.22);border-color:#f2a65a}.btn.pri{background:var(--amber);border-color:var(--amber);color:var(--night);font-weight:600}.btn[disabled]{opacity:.55;cursor:default}
+.btn:focus-visible,.bar select:focus-visible,.bar input:focus-visible,.row:focus-visible,.pop input:focus-visible{outline:2px solid #f2a65a;outline-offset:2px}
+.meta{color:var(--muted);font-size:.85rem;margin:2px 0 8px}
+.tw{overflow:auto;max-height:70vh;min-height:200px;border:1px solid var(--line);border-radius:12px;background:var(--night2);-webkit-overflow-scrolling:touch}
+table{border-collapse:separate;border-spacing:0;font-size:13px;width:max-content;min-width:100%}
+th,td{padding:8px 10px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line);max-width:300px;overflow-wrap:anywhere}
+th .sortb{background:none;border:0;color:inherit;font:inherit;padding:0;cursor:pointer;white-space:nowrap}th .sortb:hover{text-decoration:underline}th .sortb:focus-visible,td.clk:focus-visible{outline:2px solid #f2a65a;outline-offset:2px}td.clk{cursor:text}td.clk:hover{background:rgba(239,230,211,.07)}td.editing{padding:4px;min-width:140px}td.editing .ed{box-sizing:border-box;width:100%;border-radius:8px;border:1px solid #f2a65a;background:var(--night);color:var(--text);font:inherit;font-size:16px;padding:6px 8px}td.comments.clk{cursor:pointer}th{position:sticky;top:0;background:#1d3142;color:var(--amber);font-weight:600;z-index:1;white-space:nowrap}
+tr.row[role=button]{cursor:pointer}tr.row:hover td{background:rgba(239,230,211,.05)}
+td.id{white-space:nowrap;color:var(--amber)}td.type{white-space:nowrap}td.comments{min-width:170px;max-width:220px;color:var(--muted)}td.comments b{color:var(--text);font-weight:600}
+.cm{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--night);border:1px solid var(--line);font-size:.92rem;overflow-wrap:anywhere}.cm .w{display:block;color:var(--muted);font-size:.78rem;margin-top:4px}.cm button{float:right;margin-left:8px;min-height:32px;border-radius:8px;border:1px solid var(--line);background:none;color:var(--text);cursor:pointer}
+.sheet dl{margin:0}.sheet dt{color:var(--muted);font-size:.8rem;margin:10px 0 2px}.sheet dd{margin:0;overflow-wrap:anywhere}td.about,td.notes{min-width:200px}td.about{max-width:260px}
+.pop{position:fixed;z-index:50;background:#122130;border:1px solid var(--line);border-radius:12px;padding:10px;box-shadow:0 14px 36px rgba(0,0,0,.5)}
+.pop label{display:flex;align-items:center;gap:8px;min-height:36px;font-size:14px}
+.pnl{position:fixed;inset:0;z-index:60;background:rgba(5,10,16,.72);display:flex;align-items:flex-end;justify-content:center}
+.pnl[hidden],.pop[hidden]{display:none}
+.sheet{width:100%;max-width:720px;max-height:92vh;overflow:auto;background:var(--night2);border:1px solid var(--line);border-radius:16px 16px 0 0;padding:18px 16px calc(18px + env(safe-area-inset-bottom))}
+@media (min-width:760px){.pnl{align-items:center}.sheet{border-radius:16px}}
+.sheet h2{font-family:Georgia,serif;font-size:1.2rem;margin:0 0 12px;color:var(--amber)}
+.sheet label{display:block;margin:12px 0 4px;font-size:.85rem;color:var(--muted)}
+.sheet input,.sheet select,.sheet textarea{box-sizing:border-box;width:100%;border-radius:10px;border:1px solid rgba(239,230,211,.28);background:var(--night);color:var(--text);font:inherit;font-size:16px;padding:10px 12px}
+.sheet select,.sheet input{min-height:44px}.sheet textarea{min-height:90px}
+.sheet input:focus-visible,.sheet select:focus-visible,.sheet textarea:focus-visible{outline:2px solid #f2a65a;outline-offset:2px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.msg{min-height:1.3em;margin:10px 0 0;font-size:.9rem}.msg.ok{color:#9FD3A8}.msg.bad{color:#F08A7B}
+.vl{list-style:none;margin:0;padding:0}.vl li button{width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);color:var(--text);font:inherit;padding:12px 4px;min-height:44px;cursor:pointer}
+.vl li button:hover{background:rgba(239,230,211,.06)}.vl .d{color:var(--muted);font-size:.8rem;display:block}
+.sheet table{font-size:12px}.sheet table.st{width:100%;margin:0 0 6px}.sheet table.st td,.sheet table.st th{padding:5px 8px;max-width:none}.sheet h3.sh{font-size:.95rem;color:var(--amber);margin:16px 0 4px}.sheet .big{display:flex;flex-wrap:wrap;gap:8px}.sheet .big div{flex:1 1 130px;border:1px solid var(--line);border-radius:10px;padding:8px 10px}.sheet .big b{display:block;font-size:1.3rem}.sheet .big span{color:var(--muted);font-size:.8rem}
+</style>
+<body>
+<div class="wrap">
+  <div class="top"><h1>Roadmap</h1><p class="help" id="help">How you can help: Add comments in the appropriate cell. Recommend features.</p><a class="pill" href="events.html" id="backGlobe">Back to Events</a></div>
+  <div id="gateMount" data-page="roadmap"></div>
+  <div id="gated" hidden>
+    <div class="bar" id="qbar" hidden>
+      <input type="search" id="q" placeholder="Search the roadmap" aria-label="Search the roadmap" hidden>
+      <select id="fOwner" aria-label="Filter by owner" hidden></select>
+    </div>
+    <div class="bar right">
+      <select id="fArea" aria-label="Filter by area"></select><select id="fStatus" aria-label="Filter by status"></select>
+      <select id="fVer" aria-label="Filter by version"></select><button class="btn" id="showAll" type="button" aria-pressed="false" title="By default the list shows items In build, Approved, Idea and Parked. Show all adds Built and Live.">Show all</button><button class="btn" id="showKilled" type="button" aria-pressed="false" title="Killed and Merged items are kept for history and hidden by default.">Show killed and merged</button><button class="btn pri" id="sugBtn" type="button">Recommend a feature</button>
+    </div>
+    <div class="bar" id="admBar" hidden>
+      <button class="btn" id="colsBtn" type="button" aria-expanded="false">Columns</button>
+      <button class="btn" id="histBtn" type="button">Version history</button>
+      <button class="btn" id="expBtn" type="button">Export CSV</button>
+      <button class="btn" id="admBtn" type="button">Admin unlock</button>
+      <label class="btn" id="impLbl" hidden style="display:none;align-items:center">Import CSV<input type="file" id="impFile" accept=".csv,text/csv" hidden></label>
+    </div>
+    <p class="meta" id="meta" role="status"></p>
+    <div class="tw" id="tw"><table id="tbl"><thead id="thead"></thead><tbody id="tbody"></tbody></table></div>
+    <div class="bar tools" id="tools"><span class="meta">Team tools (admin code required):</span><button class="btn" id="cmtListBtn" type="button">View comments</button><button class="btn" id="sugListBtn" type="button">Suggested features</button><button class="btn" id="fbListBtn" type="button">Feedback results</button><button class="btn" id="arcListBtn" type="button">Archive</button><button class="btn" id="statsBtn" type="button">Quiz and visitor results</button></div>
+    <p class="msg" id="gmsg" role="status"></p>
+  </div>
+</div>
+<div class="pop" id="colsPop" hidden></div>
+<div class="pnl" id="pnl" hidden><div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="shT"></div></div>
+<script src="version.js"></script>
+<script src="gate.js"></script>
+<script src="roadmap.js"></script>
+<script src="nav.js"></script>
+</body>
+</html>
