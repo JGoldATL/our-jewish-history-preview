@@ -1,6 +1,6 @@
 /* Movements page (F-084, v0.7.x). Flat map of Jewish movement, built on the globe's own styles, controls and card standard.
    Data: data/history.json "sheet" (Movements, Events cards, Places, Eras). Nothing here is written back.
-   Rules (CEO, Oct 13): the story starts at the first exile (722 BCE); return and aliyah routes are not shown; the camera follows the action and
+   Rules (CEO, Oct 13): the story starts at its earliest item, Abraham (2000 BCE; changed 17 Nov from the first exile, 722 BCE); return and aliyah routes are not shown; the camera follows the action and
    never zooms in past a recognisable region; touching the map, Previous, Next, the slider or a filter stops Play; tapping an arrow opens that journey.
    One card per event; a route or destination chip opens its branch card (event title stays, subhead names the destination).
    A parent row (Barbados, New Amsterdam) lights its leg rows. Only approved cards show (add ?drafts=1 to preview drafts). */
@@ -8,7 +8,7 @@
 'use strict';
 const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg';
 const DRAFTS=/[?&]drafts=1\b/.test(location.search);
-const FIRST_YEAR=-722;                     // the Assyrian exile of the Northern Kingdom: the first exile in the data
+const FIRST_YEAR=-2000;                    // 3.7.0 (Jeffrey, 17 Nov): the page opens at its earliest item, Abraham's journey (MOV-068, 2000 BCE); it was 722 BCE, the first exile, before
 const COLORS={Red:'#B8352B',Blue:'#2D6CB8',Charcoal:'#41464A'};   // same fills as the globe
 const OUTLINE='#FFF2DE',TRAD='#EFE6D3';
 /* The five accepted eras shown on the slider and in the Era filter. Boundaries follow the Sheet's seven data eras (Biblical = era 1; Ancient History = eras 2 and 3; Middle Ages = eras 4 and 5; Early Modern History = era 6, Modern History = era 7), and Contemporary History starts at 1898 (ERA-8), the year after the First Zionist Congress. v0.7.5 reads these names and start years from the Sheet; this list is the fallback. */
